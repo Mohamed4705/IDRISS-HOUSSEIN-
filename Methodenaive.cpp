@@ -20,12 +20,12 @@ struct Pixel {
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        std::cerr << "Usage: ./Methodenaive <imageM1.ppm>" << std::endl;
+        std::cerr << "Usage: ./Methodenaive <droite_image.ppm>" << std::endl;
         return 1;
     }
 
     std::ifstream input(argv[1]);
-    std::ofstream output("output_naive.ppm");
+    std::ofstream output("droite_image.ppm");
 
     if (!input) {
         std::cerr << "Erreur d'ouverture de l'image : " << argv[1] << std::endl;
